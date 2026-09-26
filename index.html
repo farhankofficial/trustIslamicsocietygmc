@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#082c28">
 <meta name="description" content="Trust Islamic Society, Gomal Medical College — Let's Nourish The Soul and Bring The Change.">
+<link rel="icon" type="image/png" href="trust-islamic-society-mark.png">
+<link rel="preload" as="image" href="website-banner.jpg">
 <title>Trust Islamic Society | Gomal Medical College</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,24 +27,24 @@ a{text-decoration:none;color:inherit}
 button{font:inherit}
 img,svg{max-width:100%}
 .container{width:min(1160px,calc(100% - 40px));margin:0 auto}
-section{padding:88px 0;scroll-margin-top:84px}
+section{padding:76px 0;scroll-margin-top:72px}
 
 /* HEADER */
-.navbar{position:fixed;z-index:9999;top:0;left:0;width:100%;height:76px;background:rgba(255,255,255,.94);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}
-.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:11px;min-width:0}
-.logo-mark{width:45px;height:45px;flex:0 0 45px;border-radius:13px;background:var(--forest);display:grid;place-items:center;box-shadow:0 7px 18px rgba(22,70,59,.18)}
-.logo-mark svg{width:31px;height:31px}
+.navbar{position:fixed;z-index:9999;top:0;left:0;width:100%;height:62px;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(223,232,227,.9);box-shadow:0 4px 20px rgba(16,47,43,.045)}
+.nav-inner{height:62px;max-width:1100px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:9px;min-width:0;flex:0 1 auto}
+.logo-mark{width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;overflow:hidden}
+.logo-mark img{width:100%;height:100%;object-fit:contain;display:block;filter:drop-shadow(0 4px 8px rgba(22,70,59,.16))}
 .brand-text{min-width:0}
-.brand-text strong{display:block;color:var(--forest);font:700 17px/1.05 "Playfair Display",serif;white-space:nowrap}
-.brand-text span{display:block;color:var(--gold);font-size:8px;letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;white-space:nowrap}
-.nav-links{display:flex;align-items:center;gap:4px}
-.nav-links a{padding:9px 12px;border-radius:10px;color:var(--ink);font-size:13px;font-weight:700}
+.brand-text strong{display:block;color:var(--forest);font:700 16px/1.05 "Playfair Display",serif;white-space:nowrap}
+.brand-text span{display:block;color:var(--gold);font-size:7.5px;letter-spacing:1.35px;text-transform:uppercase;margin-top:3px;white-space:nowrap}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{padding:8px 10px;border-radius:9px;color:var(--ink);font-size:12px;font-weight:700;white-space:nowrap}
 .nav-links a:hover{background:var(--sage);color:var(--forest)}
 .menu-btn{display:none;border:0;background:transparent;color:var(--forest);font-size:27px;padding:5px;cursor:pointer}
 
 /* HERO */
-.hero{min-height:calc(100vh - 76px);margin-top:76px;display:flex;align-items:center;background:linear-gradient(135deg,#f3f7f2 0%,#fffdf8 58%,#f4eee1 100%);position:relative;overflow:hidden}
+.hero{min-height:0;height:430px;margin-top:62px;display:flex;align-items:center;background:linear-gradient(135deg,#f3f7f2 0%,#fffdf8 58%,#f4eee1 100%);position:relative;overflow:hidden}
 .hero:before{content:"";position:absolute;width:580px;height:580px;border-radius:50%;border:1px solid rgba(180,138,69,.18);right:-280px;top:-210px}
 .hero:after{content:"";position:absolute;width:330px;height:330px;border-radius:50%;background:rgba(35,102,87,.05);left:-190px;bottom:-150px}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr);gap:70px;align-items:center;position:relative;z-index:2}
@@ -59,9 +61,17 @@ section{padding:88px 0;scroll-margin-top:84px}
 .btn-outline{border:1px solid #cddbd4;color:var(--forest);background:white}
 .btn-outline:hover{background:var(--sage)}
 .hero-emblem{display:flex;justify-content:center;align-items:center}
-.emblem-wrap{width:min(385px,100%);aspect-ratio:1;border-radius:50%;padding:15px;background:white;border:1px solid #d9e5df;box-shadow:0 25px 65px rgba(22,70,59,.12)}
-.emblem-inner{width:100%;height:100%;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,var(--forest),#0d3a32);border:7px solid #f3eee2;outline:1px solid rgba(180,138,69,.55)}
-.emblem-inner svg{width:62%;height:62%}
+.emblem-wrap{width:min(440px,100%);display:flex;justify-content:center;align-items:center;padding:10px;filter:drop-shadow(0 24px 34px rgba(22,70,59,.18))}
+.emblem-inner{width:100%;display:grid;place-items:center}
+.emblem-inner img{width:100%;height:auto;display:block;object-fit:contain}
+
+.hero-mobile-fallback{display:none}
+
+/* DESKTOP HERO BANNER */
+.desktop-banner{display:block;height:430px;margin-top:62px;position:relative;overflow:hidden;background:#f5f1e7;border-bottom:1px solid rgba(180,138,69,.22)}
+.desktop-banner img{width:100%;height:100%;display:block;object-fit:cover;object-position:center center}
+.desktop-banner .banner-link{position:absolute;left:9.5%;bottom:78px;display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;background:var(--forest);color:#fff;font-size:12px;font-weight:800;box-shadow:0 10px 25px rgba(16,47,43,.18)}
+.desktop-banner .banner-link:hover{background:var(--forest2);transform:translateY(-1px)}
 
 /* HEADINGS */
 .section-head{max-width:770px;margin:0 auto 46px;text-align:center}
@@ -142,8 +152,17 @@ footer{background:#0c2925;color:#b5c8c1;padding:32px 0 20px}
  .mobile-splash.hide{opacity:0;visibility:hidden;pointer-events:none}
  .mobile-splash img{width:100%;height:100%;object-fit:cover;object-position:center}
 }
+@media(min-width:981px) and (max-width:1180px){
+ .nav-inner{max-width:1060px}
+ .nav-links a{padding-left:7px;padding-right:7px;font-size:11.5px}
+ .brand-text strong{font-size:15px}
+ .brand-text span{font-size:7px}
+}
 /* TABLET/MOBILE */
-@media(max-width:900px){
+@media(max-width:980px){
+ .desktop-banner{display:none}
+ .hero-mobile-fallback{display:flex}
+ .hero{display:flex;height:auto;margin-top:64px;min-height:auto}
  .hero-grid{grid-template-columns:1fr;gap:38px;text-align:center}
  .hero-copy{margin:auto}
  .eyebrow{justify-content:center}
@@ -156,7 +175,7 @@ footer{background:#0c2925;color:#b5c8c1;padding:32px 0 20px}
  .objective:last-child{grid-column:auto}
  .founders{grid-template-columns:1fr}
  .cta-box{flex-direction:column;align-items:flex-start}
- .nav-links{display:none;position:absolute;top:76px;left:0;width:100%;padding:9px 20px 14px;background:white;border-bottom:1px solid var(--line);box-shadow:0 15px 30px rgba(0,0,0,.08);flex-direction:column;align-items:stretch}
+ .nav-links{display:none;position:absolute;top:62px;left:0;width:100%;padding:9px 20px 14px;background:white;border-bottom:1px solid var(--line);box-shadow:0 15px 30px rgba(0,0,0,.08);flex-direction:column;align-items:stretch}
  .nav-links.open{display:flex}
  .nav-links a{padding:12px 13px}
  .menu-btn{display:block}
@@ -164,16 +183,16 @@ footer{background:#0c2925;color:#b5c8c1;padding:32px 0 20px}
 @media(max-width:560px){
  .container{width:min(100% - 28px,1160px)}
  section{padding:68px 0}
- .navbar,.nav-inner{height:68px}
- .nav-links{top:68px}
+ .navbar,.nav-inner{height:64px}
+ .nav-links{top:64px}
  .brand-text strong{font-size:14px}
  .brand-text span{font-size:7px;letter-spacing:1.2px}
- .logo-mark{width:40px;height:40px;flex-basis:40px}
- .hero{margin-top:68px;min-height:auto;padding:70px 0 76px}
+ .logo-mark{width:42px;height:42px;flex-basis:42px}
+ .hero{margin-top:64px;min-height:auto;padding:70px 0 76px}
  .hero h1{font-size:42px;letter-spacing:-1px}
  .hero-copy{font-size:14px}
  .motto{font-size:17px}
- .emblem-wrap{width:205px}
+ .emblem-wrap{width:285px;padding:4px}
  .about-card{padding:27px 22px}
  .dimensions{grid-template-columns:1fr}
  .mission-card{padding:36px 23px}
@@ -196,15 +215,7 @@ footer{background:#0c2925;color:#b5c8c1;padding:32px 0 20px}
 <nav class="navbar">
   <div class="container nav-inner">
     <a href="#home" class="brand" aria-label="Trust Islamic Society home">
-      <div class="logo-mark">
-        <svg viewBox="0 0 100 100" fill="none" aria-hidden="true">
-<path d="M18 31c12-7 23-5 32 3v42c-10-7-21-9-32-3V31Z" stroke="#D7B477" stroke-width="4" stroke-linejoin="round"/>
-<path d="M82 31c-12-7-23-5-32 3v42c10-7 21-9 32-3V31Z" stroke="#D7B477" stroke-width="4" stroke-linejoin="round"/>
-<path d="M50 34v42" stroke="#F2E5C9" stroke-width="3"/>
-<path d="M66 18c-7 0-13 5-15 11 3-3 7-4 11-4 6 0 11 3 14 8 1-2 2-5 2-7 0-4-4-8-12-8Z" fill="#D7B477"/>
-<path d="M24 48c7-3 14-2 22 2M76 48c-7-3-14-2-22 2" stroke="#F2E5C9" stroke-width="2.5" stroke-linecap="round"/>
-</svg>
-      </div>
+      <div class="logo-mark"><img src="trust-islamic-society-mark.png" alt="Trust Islamic Society emblem"></div>
       <div class="brand-text"><strong>Trust Islamic Society</strong><span>Gomal Medical College</span></div>
     </a>
     <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">☰</button>
@@ -217,8 +228,11 @@ footer{background:#0c2925;color:#b5c8c1;padding:32px 0 20px}
   </div>
 </nav>
 
-<header class="hero" id="home">
-  <div class="hero-pattern"></div>
+<div class="desktop-banner" id="home" aria-label="Trust Islamic Society website banner">
+  <img src="website-banner.jpg" alt="Trust Islamic Society — Gomal Medical College banner">
+  <a class="banner-link" href="#mission">Our Mission <span>→</span></a>
+</div>
+<header class="hero hero-mobile-fallback">
   <div class="container hero-grid">
     <div class="reveal">
       <div class="eyebrow">Gomal Medical College · Established 2024</div>
@@ -233,15 +247,7 @@ footer{background:#0c2925;color:#b5c8c1;padding:32px 0 20px}
     <div class="hero-emblem reveal">
       <div class="emblem-wrap">
         <div class="emblem-inner">
-          <svg viewBox="0 0 300 300" fill="none" aria-label="Trust Islamic Society emblem">
-<circle cx="150" cy="150" r="116" stroke="#D7B477" stroke-width="2"/>
-<path d="M79 126c27-16 50-13 71 5v83c-21-15-44-18-71-6v-82Z" stroke="#F2E5C9" stroke-width="7" stroke-linejoin="round"/>
-<path d="M221 126c-27-16-50-13-71 5v83c21-15 44-18 71-6v-82Z" stroke="#F2E5C9" stroke-width="7" stroke-linejoin="round"/>
-<path d="M150 131v83" stroke="#D7B477" stroke-width="5"/>
-<path d="M178 72c-19 0-34 12-39 29 9-8 20-12 31-12 16 0 30 8 38 21 4-7 6-14 6-21 0-9-10-17-36-17Z" fill="#D7B477"/>
-<path d="M94 157c18-7 36-5 55 5M206 157c-18-7-36-5-55 5" stroke="#F2E5C9" stroke-width="4" stroke-linecap="round"/>
-<circle cx="150" cy="55" r="5" fill="#D7B477"/>
-</svg>
+          <img src="trust-islamic-society-logo.png" alt="Trust Islamic Society 3D emblem">
         </div>
       </div>
     </div>
